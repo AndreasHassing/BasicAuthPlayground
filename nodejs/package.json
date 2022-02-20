@@ -1,0 +1,25 @@
+{
+  "name": "basic-auth-playground",
+  "version": "1.0.0",
+  "description": "Basic auth playground in NodeJS.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon -r dotenv/config index.js",
+    "hash": "node -r dotenv/config password-hasher-cli.js",
+    "pepper": "node -r dotenv/config pepper-generator-cli.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Andreas Hassing <andreas@famhassing.dk>",
+  "license": "MIT",
+  "dependencies": {
+    "argon2": "^0.28.4",
+    "bcrypt": "^5.0.1",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3"
+  },
+  "devDependencies": {
+    "crypto-random-string": "^4.0.0",
+    "nodemon": "^2.0.15"
+  }
+}
